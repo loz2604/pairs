@@ -58,10 +58,14 @@ p{
 #score{
     text-shadow: 2px 2px purple;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color:rgb(90, 15, 160);
+    color:rgb(58, 2, 58);
     display: flex;
     flex-direction: column;
     align-items: center;
+    border: 15px solid rgb(17, 0, 255);
+    padding: 30px;
+    border-radius: 0.4em;
+    background-color: yellow;
 }
 #table{
     padding:10px;
