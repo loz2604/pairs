@@ -2,11 +2,15 @@ body{
     display: flex;
     align-items: center;
     flex-direction: column;
+    background-size: cover;
 }
 
 #heading{
-    font-size: xx-large;
+    width: fit-content;
+    font-size: 40px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color:rgb(90, 15, 160);
+    text-shadow: 2px 2px purple;
 }
 #game{
     display:flex;
@@ -15,42 +19,46 @@ body{
 }
 p{
     font-weight: bold;
-    font-size: xx-large;
+    font-size: 50px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; 
 }
 #attempts{
     font-weight: bold;
-    font-size: xx-large;
+    font-size:50px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 #win{
-    margin-top: 15px;
+    margin-top: 40px;
     font-weight: bold;
-    font-size: xx-large;
+    font-size: 50px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     visibility: hidden;
 }
 #newGame{
+    color:rgb(1, 41, 1);
     cursor: pointer;
     background-color: greenyellow;
-    border: green solid 2px;
+    border: green solid 5px;
     border-radius: 0.4em;
-    margin-top: 20px;
+    margin-top: 50px;
     font-weight: bold;
-    font-size: x-large;
+    font-size: xx-large;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    width: 140px;
+    width: 180px;
     visibility: hidden;
 }
 #newGame:hover{
-    background-color: rgb(70, 167, 70);
-    border:green solid 2px ;
+    color: green;
 }
 #newGame:active{
+    color:rgb(1, 41, 1);
     background-color:rgb(16, 172, 16);
-    border:green solid 2px ;
+    /* border:rgb(1, 41, 1) 5px; */
 }
 #score{
+    text-shadow: 2px 2px purple;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color:rgb(90, 15, 160);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -60,157 +68,183 @@ p{
     display:flex;
     flex-wrap: wrap;
     border: black solid 2px;
-    width: 456px;
-    height:456px;
-    background-color: rgb(240, 240, 81);
+    width: 505px;
+    height:505px;
+    background-color: orange;
     border-radius: 0.6em;
+    border: red solid 15px;
+    /* box-shadow: 5px 5px 5px rgb(73, 73, 73); */
+    filter:drop-shadow(5px 5px 5px rgb(73,73,73))
+    
 }
 .grid{
+    text-shadow: -2px 2px 0 rgb(100, 29, 3),
+    2px 2px 0 rgb(100, 29, 3),
+   2px -2px 0 rgb(100, 29, 3),
+  -2px -2px 0 rgb(100, 29, 3);
+    color:yellow; 
     cursor: pointer;
     display: flex;
     justify-content: center;
     align-items: center;
     font-weight: bold;
-    font-size: xx-large;
+    font-size: 80px;
     width: 100px;
     height: 100px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 #button{
     background-color: crimson;
 }
-#block1{
+#block1{  
     border-radius: 0.6em;
     background-color: crimson;
-    border: black solid 2px;
+    border: blue solid 8px;
     margin: 5px;
     width: 100px;
     height: 100px;
+    filter:drop-shadow(5px 5px 5px rgb(73,73,73))
 }
 #block2{
     border-radius: 0.6em;
     background-color: crimson;
-    border: black solid 2px;
+    border: blue solid 8px;
     margin: 5px;
     width: 100px;
     height: 100px;
+    filter:drop-shadow(5px 5px 5px rgb(73,73,73))
 }
 #block3{
     border-radius: 0.6em;
     background-color: crimson;
-    border: black solid 2px;
+    border: blue solid 8px;
     margin: 5px;
     width: 100px;
     height: 100px;
+    filter:drop-shadow(5px 5px 5px rgb(73,73,73))
 }
 #block4{
     border-radius: 0.6em;
     background-color: crimson;
-    border: black solid 2px;
+    border: blue solid 8px;
     margin: 5px;
     width: 100px;
     height: 100px;
+    filter:drop-shadow(5px 5px 5px rgb(73,73,73))
 }
 #block5{
     border-radius: 0.6em;
     background-color: crimson;
-    border: black solid 2px;
+    border: blue solid 8px;
     margin: 5px;
     width: 100px;
     height: 100px;
+    filter:drop-shadow(5px 5px 5px rgb(73,73,73))
 }
 #block6{
     border-radius: 0.6em;
     background-color: crimson;
-    border: black solid 2px;
+    border: blue solid 8px;
     margin: 5px;
     width: 100px;
     height: 100px;
+    filter:drop-shadow(5px 5px 5px rgb(73,73,73))
 }
-#block7{
+#block7{ 
     border-radius: 0.6em;
     background-color: crimson;
-    border: black solid 2px;
+    border: blue solid 8px;
     margin: 5px;
     width: 100px;
     height: 100px;
+    filter:drop-shadow(5px 5px 5px rgb(73,73,73))
 }
 #block8{
     border-radius: 0.6em;
     background-color: crimson;
-    border: black solid 2px;
+    border: blue solid 8px;
     margin: 5px;
     width: 100px;
     height: 100px;
+    filter:drop-shadow(5px 5px 5px rgb(73,73,73))
 }
 #block9{
     border-radius: 0.6em;
     background-color: crimson;
-    border: black solid 2px;
+    border: blue solid 8px;
     margin: 5px;
     width: 100px;
     height: 100px;
+    filter:drop-shadow(5px 5px 5px rgb(73,73,73))
 }
 #block10{
     border-radius: 0.6em;
     background-color: crimson;
-    border: black solid 2px;
+    border: blue solid 8px;
     margin: 5px;
     width: 100px;
     height: 100px;
+    filter:drop-shadow(5px 5px 5px rgb(73,73,73))
 }
 #block11{
     border-radius: 0.6em;
     background-color: crimson;
-    border: black solid 2px;
+    border: blue solid 8px;
     margin: 5px;
     width: 100px;
     height: 100px;
+    filter:drop-shadow(5px 5px 5px rgb(73,73,73))
 }
 #block12{
     border-radius: 0.6em;
     background-color: crimson;
-    border: black solid 2px;
+    border: blue solid 8px;
     margin: 5px;
     width: 100px;
     height: 100px;
+    filter:drop-shadow(5px 5px 5px rgb(73,73,73))
 }
 #block13{
     border-radius: 0.6em;
     background-color: crimson;
-    border: black solid 2px;
+    border: blue solid 8px;
     margin: 5px;
     width: 100px;
     height: 100px;
+    filter:drop-shadow(5px 5px 5px rgb(73,73,73))
 }
 #block14{
     border-radius: 0.6em;
     background-color: crimson;
-    border: black solid 2px;
+    border: blue solid 8px;
     margin: 5px;
     width: 100px;
     height: 100px;
+    filter:drop-shadow(5px 5px 5px rgb(73,73,73))
 }
 #block15{
     border-radius: 0.6em;
     background-color: crimson;
-    border: black solid 2px;
+    border: blue solid 8px;
     margin: 5px;
     width: 100px;
     height: 100px;
+    filter:drop-shadow(5px 5px 5px rgb(73,73,73))
 }
 #block16{
     border-radius: 0.6em;
     background-color: crimson;
-    border: black solid 2px;
+    border: blue solid 8px;
     margin: 5px;
     width: 100px;
     height: 100px;
+    filter:drop-shadow(5px 5px 5px rgb(73,73,73))
 }
-.block{
+/* .block{
     background-color: crimson;
-    border: black solid 2px;
+    border: blue solid 5px;
     margin: 5px;
-}
+} */
 #a1{
     background-color: rgb(63, 146, 63);
     visibility: hidden;

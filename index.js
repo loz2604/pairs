@@ -60,13 +60,6 @@ const getNumbers = () => {
     shuffle(numbers);
     while (numbers.length != 0) {
         count++;
-        // let randomNumber = numbers[Math.floor(Math.random() * numbers)];
-        // console.log("randomnumber is", randomNumber)
-        // for (i = 0; i < numbers.length; i++) {
-        //     if (numbers[i] != 0) {
-
-        //     }
-        // }
         let usedNumber = numbers.splice(numbers, 1)
 
         if (count == 17) {
@@ -199,97 +192,97 @@ const gameOver = () => {
 }
 const pairs = () => {
     if (a1.theSame == true) {
-        a1block.innerHTML = "X";
+        a1block.innerHTML = "\u2713";
         blocks.splice(0, 1, "")
         block1.removeEventListener("click", block1click);
         gameOver()
     }
     if (a2.theSame == true) {
-        a2block.innerHTML = "X"
+        a2block.innerHTML = "\u2713"
         blocks.splice(1, 1, "")
         block2.removeEventListener("click", block2click);
         gameOver()
     }
     if (a3.theSame == true) {
-        a3block.innerHTML = "X"
+        a3block.innerHTML = "\u2713"
         blocks.splice(2, 1, "")
         block3.removeEventListener("click", block3click);
         gameOver()
     }
     if (a4.theSame == true) {
-        a4block.innerHTML = "X"
+        a4block.innerHTML = "\u2713"
         blocks.splice(3, 1, "")
         block4.removeEventListener("click", block4click);
         gameOver()
     }
     if (b1.theSame == true) {
-        b1block.innerHTML = "X"
+        b1block.innerHTML = "\u2713"
         blocks.splice(4, 1, "")
         block5.removeEventListener("click", block5click)
         gameOver()
     }
     if (b2.theSame == true) {
-        b2block.innerHTML = "X"
+        b2block.innerHTML = "\u2713"
         blocks.splice(5, 1, "")
         block6.removeEventListener("click", block6click)
         gameOver()
     }
     if (b3.theSame == true) {
-        b3block.innerHTML = "X"
+        b3block.innerHTML = "\u2713"
         blocks.splice(6, 1, "")
         block7.removeEventListener("click", block7click)
         gameOver()
     }
     if (b4.theSame == true) {
-        b4block.innerHTML = "X"
+        b4block.innerHTML = "\u2713"
         blocks.splice(7, 1, "")
         block8.removeEventListener("click", block8click)
         gameOver()
     }
     if (c1.theSame == true) {
-        c1block.innerHTML = "X";
+        c1block.innerHTML = "\u2713";
         blocks.splice(8, 1, "")
         block9.removeEventListener("click", block9click)
         gameOver()
     }
     if (c2.theSame == true) {
-        c2block.innerHTML = "X"
+        c2block.innerHTML = "\u2713"
         blocks.splice(9, 1, "")
         block10.removeEventListener("click", block10click)
         gameOver()
     }
     if (c3.theSame == true) {
-        c3block.innerHTML = "X"
+        c3block.innerHTML = "\u2713"
         blocks.splice(10, 1, "")
         block11.removeEventListener("click", block11click)
         gameOver()
     }
     if (c4.theSame == true) {
-        c4block.innerHTML = "X"
+        c4block.innerHTML = "\u2713"
         blocks.splice(11, 1, "")
         block12.removeEventListener("click", block12click)
         gameOver()
     }
     if (d1.theSame == true) {
-        d1block.innerHTML = "X"
+        d1block.innerHTML = "\u2713"
         blocks.splice(12, 1, "")
         block13.removeEventListener("click", block13click)
         gameOver()
     }
     if (d2.theSame == true) {
-        d2block.innerHTML = "X"
+        d2block.innerHTML = "\u2713"
         blocks.splice(13, 1, "")
         block14.removeEventListener("click", block14click)
         gameOver()
     }
     if (d3.theSame == true) {
-        d3block.innerHTML = "X"
+        d3block.innerHTML = "\u2713"
         blocks.splice(14, 1, "")
         block15.removeEventListener("click", block15click)
         gameOver()
     }
     if (d4.theSame == true) {
-        d4block.innerHTML = "X"
+        d4block.innerHTML = "\u2713"
         blocks.splice(15, 1, "")
         block16.removeEventListener("click", block16click)
         gameOver()
@@ -417,7 +410,7 @@ const checkNumbers = () => {
     }
 };
 let block1click = () => {
-    if (turns != 2) {
+    if (turns != 2 && a1.state == false) {
         a1.state = true;
         hideShowNumber()
         turns++;
@@ -425,7 +418,7 @@ let block1click = () => {
     }
 }
 let block2click = () => {
-    if (turns != 2) {
+    if (turns != 2 && a2.state == false) {
         a2.state = true
         hideShowNumber()
         turns++;
@@ -433,7 +426,7 @@ let block2click = () => {
     }
 }
 let block3click = () => {
-    if (turns != 2) {
+    if (turns != 2 && a3.state == false) {
         a3.state = true
         hideShowNumber()
         turns++;
@@ -441,7 +434,7 @@ let block3click = () => {
     }
 }
 let block4click = () => {
-    if (turns != 2) {
+    if (turns != 2 && a4.state == false) {
         a4.state = true
         hideShowNumber()
         turns++;
@@ -449,7 +442,7 @@ let block4click = () => {
     }
 }
 let block5click = () => {
-    if (turns != 2) {
+    if (turns != 2 && b1.state == false) {
         b1.state = true
         hideShowNumber()
         turns++;
@@ -457,7 +450,7 @@ let block5click = () => {
     }
 }
 let block6click = () => {
-    if (turns != 2) {
+    if (turns != 2 && b2.state == false) {
         b2.state = true
         hideShowNumber()
         turns++;
@@ -465,7 +458,7 @@ let block6click = () => {
     }
 }
 let block7click = () => {
-    if (turns != 2) {
+    if (turns != 2 && b3.state == false) {
         b3.state = true
         hideShowNumber()
         turns++;
@@ -473,7 +466,7 @@ let block7click = () => {
     }
 }
 let block8click = () => {
-    if (turns != 2) {
+    if (turns != 2 && b4.state == false) {
         b4.state = true
         hideShowNumber()
         turns++;
@@ -481,7 +474,7 @@ let block8click = () => {
     }
 }
 let block9click = () => {
-    if (turns != 2) {
+    if (turns != 2 && c1.state == false) {
         c1.state = true;
         hideShowNumber()
         turns++;
@@ -489,7 +482,7 @@ let block9click = () => {
     }
 }
 let block10click = () => {
-    if (turns != 2) {
+    if (turns != 2 && c2.state == false) {
         c2.state = true;
         hideShowNumber()
         turns++;
@@ -497,7 +490,7 @@ let block10click = () => {
     }
 }
 let block11click = () => {
-    if (turns != 2) {
+    if (turns != 2 && c3.state == false) {
         c3.state = true;
         hideShowNumber()
         turns++;
@@ -505,7 +498,7 @@ let block11click = () => {
     }
 }
 let block12click = () => {
-    if (turns != 2) {
+    if (turns != 2 && c4.state == false) {
         c4.state = true;
         hideShowNumber()
         turns++;
@@ -513,7 +506,7 @@ let block12click = () => {
     }
 }
 let block13click = () => {
-    if (turns != 2) {
+    if (turns != 2 && d1.state == false) {
         d1.state = true;
         hideShowNumber()
         turns++;
@@ -521,7 +514,7 @@ let block13click = () => {
     }
 }
 let block14click = () => {
-    if (turns != 2) {
+    if (turns != 2 && d2.state == false) {
         d2.state = true;
         hideShowNumber()
         turns++;
@@ -529,7 +522,7 @@ let block14click = () => {
     }
 }
 let block15click = () => {
-    if (turns != 2) {
+    if (turns != 2 && d3.state == false) {
         d3.state = true;
         hideShowNumber()
         turns++;
@@ -537,7 +530,7 @@ let block15click = () => {
     }
 }
 let block16click = () => {
-    if (turns != 2) {
+    if (turns != 2 && d4.state == false) {
         d4.state = true;
         hideShowNumber()
         turns++;
