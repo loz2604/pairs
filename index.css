@@ -82,10 +82,10 @@ p{
     
 }
 .grid{
-    text-shadow: -2px 2px 0 rgb(100, 29, 3),
-    2px 2px 0 rgb(100, 29, 3),
-   2px -2px 0 rgb(100, 29, 3),
-  -2px -2px 0 rgb(100, 29, 3);
+    text-shadow: -2px 2px 0 black,
+    2px 2px 0 black,
+   2px -2px 0 black,
+  -2px -2px 0 black;
     color:yellow; 
     cursor: pointer;
     display: flex;
@@ -250,66 +250,50 @@ p{
     margin: 5px;
 } */
 #a1{
-    background-color: rgb(63, 146, 63);
     visibility: hidden;
 }
 #a2{
-    background-color: rgb(63, 146, 63);
     visibility: hidden;
 }
 #a3{
-    background-color: rgb(63, 146, 63);
     visibility: hidden;
 }
 #a4{
-    background-color: rgb(63, 146, 63);
     visibility: hidden;
 }
 #b1{
     visibility: hidden;
-    background-color: rgb(63, 146, 63);
 }
 #b2{
-    background-color: rgb(63, 146, 63);
     visibility: hidden;
 }
 #b3{
-    background-color: rgb(63, 146, 63);
     visibility: hidden;
 }
 #b4{
-    background-color: rgb(63, 146, 63);
     visibility: hidden;
 }
 #c1{
-    background-color: rgb(63, 146, 63);
     visibility: hidden;
 }
 #c2{
-    background-color: rgb(63, 146, 63);
     visibility: hidden;
 }
 #c3{
-    background-color: rgb(63, 146, 63);
     visibility: hidden;
 }
 #c4{
-    background-color: rgb(63, 146, 63);
     visibility: hidden;
 }
 #d1{
-    background-color: rgb(63, 146, 63);
     visibility: hidden;
 }
 #d2{
-    background-color: rgb(63, 146, 63);
     visibility: hidden;
 }
 #d3{
-    background-color: rgb(63, 146, 63);
     visibility: hidden;
 }
 #d4{
-    background-color: rgb(63, 146, 63);
     visibility: hidden;
 }
